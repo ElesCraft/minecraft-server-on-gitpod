@@ -1,1 +1,1 @@
-nohup ./frp/frpc &
+nohup ./frp/frpc -c frpc.ini &

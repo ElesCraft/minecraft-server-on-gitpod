@@ -10,8 +10,6 @@ tar xf frp.tar.gz
 rm frp.tar.gz
 mv frp_0.34.3_linux_amd64/ frp/
 rm -f frp/frpc.ini
-mv frpc.ini frp/
-echo 'nohup frp/frpc &' > start_frpc.sh
 chmod a+x frp/start_frpc.sh
 mkdir minecraft
 cd minecraft
@@ -19,6 +17,6 @@ wget https://launcher.mojang.com/v1/objects/35139deedbd5182953cf1caa23835da59ca3
 echo 'eula=true' > eula.txt
 echo 'java -Xmx4G -jar server.jar nogui' > start.sh
 chmod a+x start.sh
-echo 'First modify frp/frpc.ini to setup frpc'
+echo 'First modify frpc.ini to setup frpc'
 echo 'run start_frp.sh to start frp'
 echo 'Then run start_minecraft.sh to run minecraft server'
