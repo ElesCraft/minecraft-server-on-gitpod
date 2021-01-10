@@ -1,0 +1,1 @@
+nohup ./frp/frpc &
