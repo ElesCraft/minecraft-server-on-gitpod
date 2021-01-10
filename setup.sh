@@ -10,6 +10,7 @@ tar xf frp.tar.gz
 rm frp.tar.gz
 mv frp_0.34.3_linux_amd64/ frp/
 rm -f frp/frpc.ini
+mv frpc.ini frp/
 echo 'nohup frp/frpc &' > start_frpc.sh
 chmod a+x frp/start_frpc.sh
 mkdir minecraft
